@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ElAdivino" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="galaxias" translatesAutoresizingMaskIntoConstraints="NO" id="J3U-Hi-U3n">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hazme una pregunta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXJ-83-uy0">
+                                <rect key="frame" x="50.5" y="34" width="274" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="gUQ-T7-c6F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IuJ-aY-wkf">
+                                <rect key="frame" x="132" y="536" width="111" height="51"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="25"/>
+                                <state key="normal" title="Preguntar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonQuestionPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4uD-VG-EJ2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ynh-xo-oFQ">
+                                <rect key="frame" x="152" y="316" width="71.5" height="35"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="darth" translatesAutoresizingMaskIntoConstraints="NO" id="9Eu-dB-3iV">
+                                <rect key="frame" x="92.5" y="170" width="190" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="J3U-Hi-U3n" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="1xM-1U-CzP"/>
+                            <constraint firstItem="IuJ-aY-wkf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Ew-u7-acW"/>
+                            <constraint firstItem="Ynh-xo-oFQ" firstAttribute="top" secondItem="9Eu-dB-3iV" secondAttribute="bottom" constant="18" id="9Mn-cU-bb1"/>
+                            <constraint firstItem="9Eu-dB-3iV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ETx-0u-b1u"/>
+                            <constraint firstItem="Ynh-xo-oFQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="FRN-oq-sHa"/>
+                            <constraint firstItem="Ynh-xo-oFQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G8V-oE-kay"/>
+                            <constraint firstItem="jXJ-83-uy0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="14" id="Gyx-IL-8ny"/>
+                            <constraint firstItem="jXJ-83-uy0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JjJ-iG-Aqc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="J3U-Hi-U3n" secondAttribute="bottom" id="P3g-bG-9T4"/>
+                            <constraint firstItem="J3U-Hi-U3n" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Sf8-4a-T4m"/>
+                            <constraint firstItem="J3U-Hi-U3n" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SgH-0x-wO7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IuJ-aY-wkf" secondAttribute="bottom" constant="80" id="ZMo-3v-XFm"/>
+                            <constraint firstItem="J3U-Hi-U3n" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="osA-SX-CXg"/>
+                            <constraint firstItem="9Eu-dB-3iV" firstAttribute="top" secondItem="jXJ-83-uy0" secondAttribute="bottom" constant="89" id="rqg-kx-l4F"/>
+                            <constraint firstItem="J3U-Hi-U3n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tfa-1i-Hyw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelAnsware" destination="Ynh-xo-oFQ" id="Zcx-PP-IRt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="darth" width="190.5" height="237"/>
+        <image name="galaxias" width="603" height="360"/>
+    </resources>
+</document>
